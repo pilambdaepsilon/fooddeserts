@@ -39,7 +39,7 @@ head = {
 }
 
 #import the zipcode data
-zipcode_dataframe = pandas.read_csv('/home/pedro/Singularity/Desktop/DS/FoodDeserts/Modified_Zip_Code_Tabulation_Areas__MODZCTA__20240229.csv')
+zipcode_dataframe = pandas.read_csv('PATH_TO_ZIPCODE_DATABASE')
 #Get all NYC Zipcodes - useful for things later on
 ZCTA = np.asarray(zipcode_dataframe['ZCTA'])
 NYC_ZIPCODES=[]
