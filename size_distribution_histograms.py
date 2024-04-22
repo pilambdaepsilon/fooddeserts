@@ -1,3 +1,10 @@
+#Author(s)     : Pedro Espino (pespino@berkeley.edu)
+#Licence       : GPLv3
+
+# This script takes in a dataset of food store locations in NYC (using NYC Open Data datasets) and parses them into lists of
+# stores with "supermarket", "bodega/grocery", "market", etc. in the name. It then plots the size distribution (Sq. Ft.) of these stores
+# on a histogram, useful for seeing the typical store size for each type of food store.
+
 import matplotlib.pyplot as plt
 from matplotlib import rc
 import matplotlib

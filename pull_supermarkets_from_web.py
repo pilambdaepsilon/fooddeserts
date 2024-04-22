@@ -1,3 +1,10 @@
+#Author(s)     : Pedro Espino (pespino@berkeley.edu)
+#Licence       : GPLv3
+
+# This script pulls a list of supermarket locations from supermarketpage.com, a third party website listing stores across the US.
+# After scraping that page for supermarket locations in NY, it cross-references the addresses with a list of NYC zipcodes, to parse
+# into a list of NYC supermarkets. It then queries Bing Maps to find the supermarket latitude and longitude. A Bing Maps API key is required.
+
 #IMPORT THE LIBRARIES
 import os
 from os.path import exists
