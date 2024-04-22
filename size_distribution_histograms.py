@@ -215,4 +215,4 @@ hax[0][1].set_ylim([1e0, 1e4])
 hax[1][0].set_ylim([1e0, 1e4])
 hax[1][1].set_ylim([1e0, 1e4])
 
-plt.savefig('size_distribution_histograms.pdf')
+plt.savefig('figures/size_distribution_histograms.pdf')

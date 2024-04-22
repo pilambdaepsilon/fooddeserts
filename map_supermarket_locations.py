@@ -204,5 +204,5 @@ for i in range(0, 2):
 ax[0].set_title(r"$\text{Locations of Supermarkets from ``supermarketpage.com''}$", fontsize=universal_fontsize)
 ax[1].set_title(r"$\text{Locations with ``Supermarket'' in Name (NYC Open Data)}$", fontsize=universal_fontsize)
 
-plt.savefig('supermarket_location_map.pdf')
+plt.savefig('figures/supermarket_location_map.pdf')
 print("Done")
