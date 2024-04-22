@@ -33,7 +33,8 @@ matplotlib.rc('legend', fontsize=universal_fontsize)
 #Make a figure to save histograms in
 hfig, hax= plt.subplots(nrows=2, ncols=2,figsize=(16,16))
 
-zipcode_dataframe = pandas.read_csv('path to zipcode DB')
+#zipcode_dataframe = pandas.read_csv('path to zipcode DB')
+zipcode_dataframe = pandas.read_csv('/home/pedro/Singularity/Desktop/DS/FoodDeserts/Modified_Zip_Code_Tabulation_Areas__MODZCTA__20240229.csv')
 #Get all NYC Zipcodes - useful for things later on
 ZCTA = np.asarray(zipcode_dataframe['ZCTA'])
 NYC_ZIPCODES=[]
@@ -62,7 +63,8 @@ for x in lines:
 f.close()
 
 #Import the food store database from NYC Open Data
-foodstore_dataframe = pandas.read_csv('path to retail store db')
+#foodstore_dataframe = pandas.read_csv('path to retail store db')
+foodstore_dataframe = pandas.read_csv('/home/pedro/Singularity/Desktop/DS/FoodDeserts/Retail_Food_Stores_20240226.csv')
 FOODSTORE_BORO=np.asarray(foodstore_dataframe['County'])
 FOODSTORE_TYPE=np.asarray(foodstore_dataframe['Establishment Type'])
 FOODSTORE_OPTYPE=np.asarray(foodstore_dataframe['Operation Type'])
